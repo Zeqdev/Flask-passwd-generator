@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Password generator</title>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<style type="text/tailwindcss">
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body class="bg-[#111827] min-h-screen flex justify-center items-center">
+		<div class="bg-[#7c3aed] flex-col w-1/4 h-auto rounded-2xl">
+			<h1 class="font-sans font-semibold text-4xl text-center my-8">
+				PASSWORD GENERATOR
+			</h1>
+
+			<form action="password" class="flex flex-col justify-center items-center">
+				<label for="length" class="font-sans text-xl text-center mb-1"
+					>Select the length of your password:</label
+				>
+				<select name="length" id="length" class="bg-[transparent] text-center p-4">
+					<option value="8">8 Characters</option>
+					<option value="9">9 Characters</option>
+					<option value="10">10 Characters</option>
+					<option value="11">11 Characters</option>
+					<option value="12">12 Characters</option>
+					<option value="13">13 Characters</option>
+					<option value="14">14 Characters</option>
+					<option value="15">15 Characters</option>
+					<option value="16">16 Characters</option>
+					<option value="17">17 Characters</option>
+					<option value="18">18 Characters</option>
+					<option value="19">19 Characters</option>
+					<option value="20">20 Characters</option>
+				</select>
+
+				<label for="type" class="font-sans text-xl text-center mb-1"
+					>Select the type of your password:</label
+				>
+				<select name="type" id="type" class="bg-[transparent] text-center p-4">
+					<option value="letters">Letters</option>
+					<option value="letters_and_numbers">Letters and numbers</option>
+					<option value="all_characters">Letters, numbers and symbols</option>
+				</select>
+
+				<button
+					type="submit"
+					class="bg-[transparent] border-2 border-solid border-gray-900 text-lg rounded-xl p-2 my-6 hover:scale-110 transition duration-300 ease-in-out"
+				>
+					Generate password
+				</button>
+			</form>
+		</div>
+	</body>
+</html>
